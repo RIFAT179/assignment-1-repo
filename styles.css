@@ -1,4 +1,3 @@
-
 .open-sans-normal{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -6,60 +5,83 @@
   font-variation-settings:
     "wdth" 100;
 }
-.header{
- background-image: url(Assets/Hero-bg.png);
- background-repeat: no-repeat;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.btn-primary{
-  background-color: #4E47FF;
-  font-weight: bold;
- color: white;
- padding: 18px 34px;
- border-radius: 5px;
- font-size: 15px;
- border: none;
- align-items: center;
+body{
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.7;
 }
 
-nav ul{
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3{
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.nev-container{
   display: flex;
-  align-items: center;
-  justify-content: space-between ;
-}
-
-nav ul li{
-  list-style: none;
-  font-size: 25px;
-  color:#4E47FF ;
-  align-items: center;
-  font-weight: bold;
-}
-.blue{
-  color: #4E47FF;
-}
-
-.dark{
-  color: #252432 ;
-  font-weight: bold;
-  align-items: center;
- margin: 20px 35px 0px 200px;
- border: 20;
-}
-.head{
-  align-items: center;
-}
-main{
-  display: flex;
-  margin: 50px 20px 300px;
   justify-content: space-between;
+  align-items: center;
 }
-.pra{
-  color: #252432;
+
+.logo{
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--text-light);
+  text-decoration: none;
 }
-.Joined{
+
+
+.btn{
+  padding: 12px 24px;
+  border: none;
   border-radius: 7px;
-  color: ;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
-.secondary-bg{
-  background-color: #4E47FF;
+
+.btn-primary{
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.btn-primary:hover{
+  background-color: #5548d9;
+}
+
+.btn-secondary{
+  background-color: var(--primary-color);
+  columns: var(--text-light);
+}
+.action-container{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+}
+.action-text{
+  flex: 1;
+}
+
+.action-image{
+  flex: 1;
+}
+
+.action-image{
+  width: 100%;
+  border-radius: 13px;
+
 }
